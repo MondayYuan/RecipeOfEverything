@@ -1,0 +1,176 @@
+/* miniprogram/pages/detail/detail.wxss */
+page {
+  background: #fff;
+}
+
+.detail {
+  font-size: 24rpx; 
+  font-weight: 400;
+  line-height: 40rpx;
+}
+
+.detail .banner {
+  height: 500rpx;
+  width: 750rpx;
+  overflow: hidden;
+}
+.detail .banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  width: 750rpx;
+  padding-top: 30rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.head .title {
+  color: #000000;
+  font-weight: 800;
+  font-size: 36rpx;
+  line-height: 70rpx;
+}
+
+.head .description {
+  color: #000000;
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 40rpx;
+}
+
+.dash-line {
+  border-top:2px dashed #959595;
+  height: 2px;
+  overflow:hidden;
+}
+
+.material .title{
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  height: 40rpx;
+}
+
+.body .title image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: middle;
+}
+
+.body .title text{
+  margin-left: 20rpx;
+  color: #ff3333;
+  font-size: 40rpx;
+  font-weight: 800;
+  line-height: 40rpx;
+  vertical-align: middle;
+}
+
+.content {
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.content text{
+  font-size: 24rpx; 
+  line-height: 40rpx;
+}
+
+.method image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: middle;
+}
+
+.step {
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+
+.tips image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: middle;
+}
+
+/*自定义底部导航开始 */
+.footer {
+ position: fixed; 
+ bottom: 0;
+ width: 100%;
+ height:100rpx; /*footer的高度*/
+ background: #ffffff;
+ z-index: 500;
+ border-top:1rpx solid #ccc;
+ display: flex;
+ flex-direction: row;
+}
+
+.footer .backhome { 
+  height: 40rpx;
+  position: fixed;
+  bottom: 30rpx;
+  left: 70rpx;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+} 
+
+.footer .buy { 
+  height: 40rpx;
+  position: fixed;
+  bottom: 30rpx;
+  left: 250rpx;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.footer .collect { 
+  height: 40rpx;
+  position: fixed;
+  bottom: 30rpx;
+  left: 420rpx;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.footer .collect button{
+  position: fixed;
+  bottom: 30rpx;
+  left: 420rpx;
+  height: 60rpx;
+  width: 60rpx;
+  opacity: 0;
+  z-index: 10;
+}
+
+.footer .share button{
+  position: fixed;
+  bottom: 30rpx;
+  left: 590rpx;
+  height: 60rpx;
+  width: 60rpx;
+  opacity: 0;
+  z-index: 10;
+  /* border: none; */
+}
+
+
+.footer image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.footer text {
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #666666;
+  margin-left: 10rpx;  
+}
+/*底部导航结束 */

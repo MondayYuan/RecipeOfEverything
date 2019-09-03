@@ -1,0 +1,136 @@
+<!--pages/method/method.wxml-->
+<image class='banner' src='/images/method/banner.png' mode='aspectFill'></image>
+
+<view class="head">
+  <view class="title">
+    <text>笋干的泡发方法</text>
+  </view>
+  <view class="description">
+    <text>压榨笋干是很干很硬的，食用前必须经过水发，所以请耐心的按照方法来泡发。在水发期间，应每天换水至少一次，以保持水汪，防止发酸，并使其发足发透。水发时，注意不能让饭粒掉在里面，以免笋干发黑。</text>
+  </view>
+</view>
+
+<view class='segline' style="padding-left: 40rpx; padding-right:40rpx;">
+  <view class='dash-line'></view>
+</view>
+
+<view class='steps'>
+  <view class='step'>
+    <image src='/images/method/step1.png'></image>
+    <view class='right-display'>
+      <view class='title'>
+        <text>第一步：清水泡</text>
+      </view>
+      <view class='explanation'>
+        <text>冷水（或洗米水）泡1天，每天换水2-3次，冬天可用温热水。</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='step'>
+    <image src='/images/method/step2.png'></image>
+    <view class='right-display'>
+      <view class='title'>
+        <text>第二步：煮笋</text> <text style='font-size:22rpx;'>（高压锅、电饭煲等均可用）</text>
+      </view>
+      <view class='explanation'>
+        <text style='font-weight: bold;'>笋干丝：</text> <text>高压锅煮1个小时左右；电饭煲、炖煲煮到吃得动就可以。
+        </text><text style='font-weight: bold;'>大块笋干(片）：</text> <text>高压锅煮1个小时左右，斜刀切片，冷水泡1天，再高压锅煮1个小时左右</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='step'>
+    <image src='/images/method/step3.png'></image>
+    <view class='right-display'>
+      <view class='title'>
+        <text>第三步：清水泡</text>
+      </view>
+      <view class='explanation'>
+        <text>冷水泡1天，换水2-3次。（泡发期间，一定要记得勤换水，发好的笋肉质肥嫩，有韧性，还有一股笋香味）。</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='step'>
+    <image src='/images/method/step4.png'></image>
+    <view class='right-display'>
+      <view class='title'>
+        <text>第四步：烹饪</text>
+      </view>
+      <view class='explanation'>
+        <text>发好的笋，可炒、可炖、可焖、可煲汤、可下火锅、做麻辣烫等，吃法多样，可以根据自己喜爱烹饪。</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='step'>
+    <image src='/images/method/step5.png'></image>
+    <view class='right-display'>
+      <view class='title'>
+        <text>泡多了吃不完的笋怎么保存？</text>
+      </view>
+      <view class='explanation'>
+        <text>用冷水泡着，放冰箱冷藏，每天换水2-3次。夏天可放置3-5天，冬天可以放置7天左右。发好的笋还是要尽快吃完的哦~</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='segline' style="padding-left: 40rpx; padding-right:40rpx;">
+  <view class='dash-line'></view>
+</view>
+
+<view class='questions'>
+  <view class='title'>
+    <image src='/images/circles.png'></image>
+    <text>笋干说明及问题解答</text>
+  </view>
+  <view class='explanation'>
+    <text space="emsp">  每年清明节前后采挖鲜笋，经过修根—剥壳—高温煮透—清水浸漂—压仓发酵—太阳曝晒等工艺，历时半年制做出清香醇厚，色泽明黄的优质笋干。整个制作过程不使用任何添加剂，既保证了笋干的原汁原味，也保证了笋干的安全健康。</text>
+  </view>
+
+  <view class='question'>
+    <image src='/images/love_active.png'></image>
+    <view class='right-text'>
+      <text class='ask'>问：干笋为什么会有气味？是正常的吗？</text>
+      <text class='answer'>答：鲜笋在压榨过程中会发酵产生一定的酸或碱（酸或碱都具有防腐的作用），因而干笋会有发酵气味，这是压榨笋干正常的气味。在用水泡发的过程中，酸或碱会溶解在水中，气味也会慢慢消散，并不会影响食用，请您放心。</text>
+    </view>
+  </view>
+
+  <view class='question'>
+    <image src='/images/love_active.png'></image>
+    <view class='right-text'>
+      <text class='ask'>问：笋干上白点点是什么？是不是发霉了？</text>
+      <text class='answer'>答：干笋表层偶有少许白色颗粒，是鲜笋经水煮晒干过程中渗出来的笋汁结晶，不影响食用。（笋干发霉是长绿色的毛毛）</text>
+    </view>
+  </view>
+
+  <view class='question'>
+    <image src='/images/love_active.png'></image>
+    <view class='right-text'>
+      <text class='ask'>问：笋干和其他特产是否有添加剂？</text>
+      <text class='answer'>答：我们的货来自江西山区，保证无添加。</text>
+    </view>
+  </view>
+
+  <view class='question'>
+    <image src='/images/love_active.png'></image>
+    <view class='right-text'>
+      <text class='ask'>问：笋干怎么形状大小、颜色有差异？</text>
+      <text class='answer'>答：关于形状：春笋是深山野外自然生长的，非人工种植，大小形状各异，所以明笋干有大有小，笋干丝长短不一。
+关于颜色：未经熏硫处理的笋干由于接触空气会有正常的氧化现象，颜色会越来越深，温度高的季节变色尤其明显，变色是正常的氧化现象，并不影响品质。
+</text>
+    </view>
+  </view>
+
+  <view class='question'>
+    <image src='/images/love_active.png'></image>
+    <view class='right-text'>
+      <text class='ask'>问：我还有其他的问题想咨询？</text>
+      <text class='answer'>答：您联系旺旺客服或者加客服微信，有任何问题客服都会一一为您解答。</text>
+    </view>
+  </view>
+
+</view>
+

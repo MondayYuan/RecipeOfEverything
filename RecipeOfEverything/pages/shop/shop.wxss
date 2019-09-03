@@ -1,0 +1,92 @@
+/* pages/shop/shop.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tab-h {
+  width: 750rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #F7F7F7; 
+  margin-top: 50rpx;
+  padding-left: 35rpx;
+}
+
+.tab-h .tab-item{
+  margin-left: 45rpx;
+  margin-right: 45rpx;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.tab-item.active{
+  color: #ff3333;
+  border-bottom: 2rpx solid #ff3333;
+}
+
+
+.tab-content{
+  width: 750rpx;
+}
+
+.shop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.shop-content .search {
+  width: 500rpx;
+  height: 40rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 90rpx;
+  border: 2rpx solid #a0a0a0;
+  border-radius: 20rpx;
+}
+
+.shop-content .search image {
+  width: 35rpx;
+  height: 30rpx;
+  margin-left: 60rpx;
+}
+
+.shop-content .search .front-text{
+  font-size: 24rpx;
+  line-height: 24rpx;
+  font-weight: bold;
+  margin-left: 15rpx;
+}
+
+.shop-content .search .behind-text{
+  font-size: 24rpx;
+  line-height: 24rpx;
+  font-weight: bold;
+  color: #ff3333;
+}
+
+.shop-content .qrcode {
+  width: 290rpx;
+  height: 290rpx;
+  margin-top: 80rpx;
+}
+
+.shop-content .tip {
+  font-size: 20rpx;
+  line-height: 20rpx;
+  margin-top: 15rpx;
+}
+
+

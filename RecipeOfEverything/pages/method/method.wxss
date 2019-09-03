@@ -1,0 +1,158 @@
+/* pages/method/method.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner {
+  /* position: absolute; */
+  /* top: 0; */
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.head {
+  width: 750rpx;
+  box-sizing: border-box;
+  padding-top: 30rpx;
+}
+
+.head .title{
+  font-size: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.head .description{
+  font-size: 24rpx;
+  line-height: 35rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+  padding-top: 30rpx;
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+  padding-bottom: 30rpx;
+}
+
+.segline {
+  height:12 rpx;
+  width: 750rpx;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+
+.dash-line{
+  border-top: 2rpx dashed #959595;
+  height: 2rpx;
+  overflow:hidden;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 750rpx;
+  height: 220rpx;
+  box-sizing: border-box;
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+}
+
+.step image{
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.step .right-display {
+  width: 480rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.step .right-display .title{
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #ff3333;
+  font-weight: bold;
+  margin-left: 15rpx;
+}
+
+.step .right-display .explanation{
+  font-size: 24rpx;
+  line-height: 35rpx;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+}
+
+.questions {
+  width: 750rpx;
+  box-sizing: border-box;
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+  padding-top: 25rpx;
+}
+
+.questions .title {
+  height: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.questions .title image{
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.questions .title {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #ff3333;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+
+.questions .explanation{
+  font-size: 24rpx;
+  line-height: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.question{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.question image{
+  height: 40rpx;
+  width: 45rpx;
+}
+
+.question .right-text{
+  width: 610rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rpx;
+}
+
+.question .right-text .ask{
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #ff3333;
+}
+
+.question .right-text .answer{
+  font-size: 24rpx;
+  line-height: 35rpx;
+  margin-top: 10rpx;
+}

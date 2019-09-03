@@ -1,0 +1,19 @@
+<!--pages/shop/shop.wxml-->
+<scroll-view scroll-x="true" class="tab-h">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">淘宝购买</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">拼多多购买</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">微信购买</view>
+</scroll-view>
+
+<swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height: 700rpx;">
+  <swiper-item wx:for='{{shops}}' class='shop-content'>
+      <view class='search' data-copytext='{{item.search[1]}}' bindtap='setClipboard'>
+        <image src='/images/shop/search.png'></image>
+        <text class='front-text'>{{item.search[0]}}</text>
+        <text class='behind-text'>{{item.search[1]}}</text>
+      </view>
+      <image class='qrcode' src="{{cloud_url}}{{item.qrcode}}" data-src='{{cloud_url}}{{item.qrcode}}' bindtap='previewImage'></image>
+      <text class='tip'>{{item.tip}}</text>
+  </swiper-item>
+</swiper>

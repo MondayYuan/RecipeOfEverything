@@ -1,0 +1,97 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class='detail' wx:if='{{isExit}}'>
+  <view class='banner'>
+    <image src='{{cloud_url}}{{detail.banner}}'  ></image>
+  </view>
+
+  <view class='head'>
+    <text class='title'>{{detail.title}}\n</text>
+    <text class='description'>{{detail.description}}</text>
+  </view>
+
+  <view style="height:42 rpx; width: 750rpx; padding-top: 40rpx; padding-left: 35rpx; padding-right: 35rpx; box-sizing: border-box;">
+        <view class='dash-line'></view>
+  </view>
+
+  <view class='body' style="padding-top:20rpx; padding-left:35rpx; padding-right:35rpx; box-sizing: border-box;">
+
+    <view class='material'>
+      <view class='title'>
+        <image src='/images/circles.png'></image>
+        <text>食材明细</text>
+      </view>
+      <view class='content'>
+        <text>主食材：{{detail.ingredients}}\n</text>
+        <text>辅食材：{{detail.auxiliary}}\n</text>
+        <text space='emsp'>调 料：{{detail.seasoning}}</text>
+      </view>
+    </view>
+
+    <view class='method' style="margin-top:45rpx;">
+      <view class='title'>
+        <image src='/images/circles.png'></image>
+        <text>做法步骤</text>
+      </view>
+      <view class='step' wx:for='{{detail.steps}}' wx:key='{{index}}'>
+        <text>{{item}}</text>
+      </view>
+    </view>
+
+    <view class='tips' wx:if='{{detail.tips.length>0}}'>
+      <view class='title' style="margin-top: 40rpx; margin-bottom:20rpx;">
+        <image src='/images/circles.png'></image>
+        <text>小技巧</text>
+      </view>
+      <view class='tip' wx:for='{{detail.tips}}' wx:key='{{index}}'>
+        <text>{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view style="height:102 rpx; width: 750rpx; padding-top: 100rpx; padding-left: 35rpx; padding-right: 35rpx; box-sizing: border-box;">
+        <view class='dash-line'></view>
+  </view>
+  
+</view>
+
+<view class='footer'>
+    <!-- 首页 -->
+  <view class='backhome' bindtap='onBackhome'>
+    <image src='/images/nav/index-active.png'></image>
+    <text>首页</text>
+  </view>
+
+  <!-- 购买 -->
+  <view class='buy' bindtap='onGoshopping'>
+    <image src='/images/shop_car.png'></image>
+    <text>购买</text>
+    <button open-type='share'></button>
+  </view>
+
+  <!--收藏-->
+  <!-- 用户未登录 -->
+  <view class='collect' wx:if='{{!userInfo}}' style='z-index:11;background: rgba(0, 0, 0, .1);'>
+    <button open-type="getUserInfo" bindgetuserinfo='getUser' plain="true"></button>
+    <image src="/images/love.png" style="height:40rpx; width:40rpx; position: fixed; left: 420rpx; bottom: 30rpx;" mode='aspectFit'></image>
+    <text style="position: fixed;left: 460rpx; bottom: 30rpx; line-height:24rpx;">收藏</text>
+  </view>
+
+  <!-- 用户已登录 -->
+  <view class='collect' wx:else catchtap='bindCollect'>
+    <image wx:if='{{!isCollected}}' src='/images/love.png'></image>
+    <text wx:if='{{!isCollected}}'>收藏</text>
+    <image wx:if='{{isCollected}}' src='/images/love_active.png'></image>
+    <text wx:if='{{isCollected}}'>已收藏</text>
+  </view>
+
+  <!-- 分享 -->
+  <view class='share' >
+    <button open-type='share' plain="true"></button>
+    <image src="/images/share.png" style="height:40rpx; width:40rpx; position: fixed; left: 590rpx; bottom: 30rpx;" mode='aspectFit'></image>
+    <text style="position: fixed;left: 635rpx; bottom: 30rpx; line-height:24rpx;">分享</text>
+  </view>
+</view>
+
+<view class='no-list' wx:if="{{!isExit}}" style='text-align:center;font-size:24rpx;padding:30rpx;'>
+  <text style='color:#666;'>--- 未找到您搜索的菜品 ---</text>
+</view>

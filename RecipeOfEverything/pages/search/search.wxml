@@ -1,0 +1,31 @@
+<view>
+  <view class='search'>
+    <view class='inputArea'>
+      <input placeholder="今天吃什么" placeholder-class="input-text" focus bindconfirm='goSearch' bindinput="bindKeyInput" value="{{searchContent}}"></input>
+    </view>
+    <icon wx:if="{{showClear}}" type="clear" size="14" bindtap='clearInput'/>
+    <text bindtap='backHome'>取消</text>
+  </view>
+
+  <view class='history'>
+    <text class='title'>搜索历史</text>
+    <text class='clearHistory' wx:if='{{historyList.length}}' bindtap='clearHistory'>清空历史</text>
+    <view>
+      <text wx:for='{{historyList}}' wx:key='{{index}}' bindtap='goSearchByHistory' data-title="{{item}}">{{item}}</text>
+    </view>
+  </view>
+
+  <view wx:if='{{!historyList.length}}' style='text-align:center;color:#666;font-size:24rpx;' >
+    搜索历史为空
+  </view>
+
+  <view class='hotSearch'>
+    <text class='title'>热门搜索</text>
+    <view>
+      <text wx:for='{{hotSearchList}}' wx:key='{{index}}' bindtap='goSearchByHistory' data-title="{{item}}">{{item}}</text>
+    </view>
+  </view>
+
+  
+
+</view>

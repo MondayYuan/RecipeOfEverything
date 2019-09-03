@@ -1,0 +1,40 @@
+<!--pages/user/user.wxml-->
+<view class='user'>
+  <view class='avatar'>
+    <image wx:if='{{hasUserInfo}}' class='avatar' src='{{userInfo.avatarUrl}}'></image>
+    <image wx:else class='avatar' src='/images/user/user-unlogin.png'></image>
+  </view>
+  <text wx:if='{{hasUserInfo}}' class='nickname'>{{userInfo.nickName}}</text>
+  <text wx:else class='nickname'>未登录</text>
+</view>
+
+<!-- 未登录时 -->
+<view class='login' wx:if='{{!hasUserInfo}}'>
+  <text>请登录后查看您收藏的菜品</text>
+    <button open-type="getUserInfo" bindgetuserinfo="getUser" class="userinfo-avatar">
+      登录
+    </button>
+</view>
+
+<!-- 已登录时 -->
+<view class='collect' wx:else>
+  <view class='title'>
+    <image src='/images/circles.png'></image>
+    <text>我的菜谱</text>
+  </view>
+
+  <view class='box' wx:for='{{collectList}}' wx:key='{{index}}' data-id='{{item.id}}' bindtap='goDetail'>
+    <image src='{{cloud_url}}{{item.banner}}'></image>
+    <view class='right-display'>
+      <text class='title'>{{item.title}}</text>
+      <text>主食材：{{item.ingredients}}</text>
+      <text>辅食材：{{item.auxiliary}}</text>
+      <text>调 料:{{item.seasoning}}</text>
+    </view>
+  </view>
+
+  <view class='nocollection' wx:if='{{!collectList.length}}' style='text-align:center;padding-top:50rpx;'>
+      <text style='color:#666;'>您还没有收藏过菜品</text>
+  </view>
+
+</view>

@@ -1,0 +1,52 @@
+/* pages/list/list.wxss */
+.box {
+  width: 750rpx;
+  height: 260rpx;
+  padding: 0rpx 0rpx 30rpx 30rpx;
+  overflow: hidden;
+  position: relative;  
+}
+
+.box .frame{
+  width: 690rpx;
+  height: 220rpx;
+  border: 2px solid #959595;
+  border-radius: 10rpx;
+  box-shadow: 1rpx 1rpx 1rpx 6rpx #dcdcdc;
+  display: flex;
+  flex-direction: row;
+}
+
+.frame image {
+  height: 180rpx;
+  width: 240rpx; 
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+}
+
+.right {
+  width: 430rpx;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 25rpx;
+  padding-left: 15rpx;
+}
+
+.right text {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000000;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  font-weight: 500rpx;
+}
+
+.right text.title {
+  color: #000000;
+  font-weight: 800;
+  font-size: 30rpx;
+  padding-bottom: 20rpx;
+}

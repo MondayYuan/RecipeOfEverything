@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class='top'>
+  <image src='/images/index/title.png'></image>
+  <text class='slogan'>尽情地享受食材的美味</text>
+  <view class='search' bindtap='goSearch'>
+    <image src="/images/index/search_index.png"></image>
+    <text>冬笋炒牛肉</text>
+  </view>
+</view>
+
+<view class='category'>
+  <view class='box' bindtap='goMethod'>
+    <image src='{{cloud_url}}{{sungan_method_img}}'></image>
+    <view class='label'>
+      <image src='/images/circles.png'></image>
+      <text>笋干的泡发方法</text>
+    </view>
+  </view>
+
+  <view class='box' data-content='笋类' bindtap='goList' style='margin-left: 30rpx;'>
+    <image src='{{cloud_url}}{{sun_kind_img}}'></image>
+    <view class='label'>
+      <image src='/images/circles.png'></image>
+      <text>笋类食谱</text>
+    </view>
+  </view>
+
+  <view class='box' data-content='菌菇类' bindtap='goList'>
+    <image src='{{cloud_url}}{{jungu_kind_img}}'></image>
+    <view class='label'>
+      <image src='/images/circles.png'></image>
+      <text>菌菇类食谱</text>
+    </view>
+  </view>
+
+  <view class='box' data-content='其它类' bindtap='goList' style='margin-left: 30rpx;'>
+    <image src='{{cloud_url}}{{other_kind_img}}'></image>
+    <view class='label'>
+      <image src='/images/circles.png'></image>
+      <text>其它类食谱</text>
+    </view>
+  </view>
+
+</view>

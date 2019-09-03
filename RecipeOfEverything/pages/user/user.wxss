@@ -1,0 +1,133 @@
+/* pages/user/user.wxss */
+
+page{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user {
+  height: 260rpx;
+  width: 750rpx;
+  background: linear-gradient(#ff3333, #ff5f33);
+  border: 2rpx solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user .avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background: #fff;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user .avatar image{
+  margin-top: 0rpx;
+  margin-left: 0;
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.user .nickname {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  margin-top: 20rpx;
+  color: #fff;
+}
+
+.login {
+  text-align: center;
+  padding: 160rpx 200rpx;
+}
+
+.login text {
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.login button {
+  margin-top: 20rpx;
+  line-height: 80rpx;
+  font: 28rpx;
+  background: #ff6262;
+  color: #ffff;
+}
+
+.collect {
+  width: 750rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 30rpx;
+  margin-bottom: 100rpx;
+  box-sizing: border-box;
+}
+
+.collect .title{
+  height: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.collect .title image {
+  height: 35rpx;
+  width: 35rpx;
+}
+
+.collect .title text {
+  font-size:24rpx;
+  line-height: 24rpx;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+
+.box {
+  height: 210rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #959595;
+  border-radius: 10rpx;
+  box-shadow: 1rpx 1rpx 1rpx 6rpx #dcdcdc;
+}
+
+.box image {
+  height: 180rpx;
+  width: 240rpx; 
+  margin-left: 20rpx;
+}
+
+.box .right-display {
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 15rpx;
+  padding-left: 15rpx;
+}
+
+.box .right-display text {
+  width: 390rpx;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.box .right-display text.title {
+  font-weight: bold;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  margin-bottom: 10rpx;
+}
